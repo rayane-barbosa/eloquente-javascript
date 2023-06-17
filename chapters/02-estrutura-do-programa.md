@@ -484,7 +484,12 @@ console.log(abc.length);
 A maioria dos exercícios contém um pedaço de código que pode ser utilizada para alterar e resolver o exercício. Lembre-se que você pode clicar em um bloco de código para editá-lo.
 
 ```javascript
-// Your code here.
+	var conteudo = "#";	
+ for(var camada =  0; camada < 7; camada++){
+	console.log(conteudo); 
+	conteudo += "#";
+}
+
 ```
 
 **Dicas:**
@@ -500,6 +505,20 @@ Escreva um programa que imprima usando `console.log()` todos os números de 1 a 
 Quando o programa estiver funcionando, modifique-o para imprimir `FizzBuzz` para números que são divisíveis ambos por 3 e 5 (e continue imprimindo `Fizz` e `Buzz` para números divisíveis por apenas um deles).
 
 (Isto é na verdade uma pergunta de entrevista usada para eliminar uma porcentagem significativa de candidatos programadores. Então se você resolvê-la, você está autorizado de se sentir bem consigo mesmo).
+
+```javascript
+	for(var numero = 1; numero <= 100; numero ++){
+	if (numero % 3 == 0 && numero % 5 == 0)
+	console.log("FizzBuzz");
+	else if (numero % 3 == 0)
+	console.log("Fizz");
+	else if (numero % 5 == 0)
+	console.log("Buzz");	
+	else
+	console.log(numero); 
+}
+
+```
 
 **Dica:**
 
